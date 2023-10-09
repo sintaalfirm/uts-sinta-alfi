@@ -64,6 +64,15 @@ aside {
         flex: 100%; /* Menggunakan lebar penuh ketika layar lebih kecil */
         margin-top: 10px; /* Mengurangi margin atas */
     }
+    main {
+        flex-direction: column; /* Mengubah tata letak ke tata letak kolom pada layar kecil */
+        gap: 1rem; /* Mengurangi jarak antar elemen */
+    }
+
+    #map {
+        width: 100%; /* Menggunakan lebar penuh pada layar kecil */
+        height: 300px; /* Atur tinggi sesuai kebutuhan Anda */
+    }
 }
 
 article h3 {
