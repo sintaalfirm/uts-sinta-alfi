@@ -1,0 +1,86 @@
+/* Judul essai */
+.custom-jumbotron {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #a0b1c3;
+    border-radius: 10px;
+}
+.custom-jumbotron h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.col-md-12 {
+    font-size: small;
+    text-align: center;
+    color: #a0b1c3;
+    background-color: black;
+}
+
+* {
+    font-family: 'montserrat';
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.profil h5 {
+    font-size: 15px;
+}
+
+.profil table {
+    font-size: 12px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    /*float: right;
+    width: 25%;
+    padding: 20px;*/
+    flex: 1;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        flex: 100%; /* Menggunakan lebar penuh ketika layar lebih kecil */
+        margin-top: 10px; /* Mengurangi margin atas */
+    }
+}
+
+article h3 {
+    font-size: 20px;
+    color: #643e06;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+

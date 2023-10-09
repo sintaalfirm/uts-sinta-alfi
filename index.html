@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M6 Sinta Alfi</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	
+	<!-- memanggil bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+	<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+	<link rel="stylesheet" href="style.css"/>
+	<style>
+		#map {
+            width: 640px;
+            height: 400px;
+        }
+        .error-message {
+            color: red;
+        }
+        
+    </style>
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">UTS SIGWeb</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<div class="jumbotron custom-jumbotron">
+        <div class="container">
+            <h1>Esai mata kuliah SIG Web</h1>
+			<p1>Berisi tentang materi yang sudah dipelajari di mata kuliah Sistem Informasi Geografis berbasis web <i>(Web-based Geographic Information System)</i> di <a href="https://geodesi.ugm.ac.id/">Departemen Teknik Geodesi</a>, Fakultas Teknik, Universitas Gadjah Mada</p1>
+        </div>
+    </div>
+
+	<main>
+		<div id="content">
+			<article id="internet" class="kartu">
+				<img class="mx-auto d-block" src="https://static.vecteezy.com/system/resources/previews/000/141/428/original/free-map-illustration-vector.jpg"  width="400" height="300">
+				<h3>Minggu 1, 2, 3</h3>
+				<p>Untuk minggu pertama mempelajari Mengenai cara kerja internet dan istilah-istilah internet Mengenal komponen web: HTML, CSS dan JS Latihan membuat web sederhana dengan HTML dan CSS dan
+					Membaca panduan praktik pembuatan web dengan WSL dan Linux. Pada minggu ini dipelajari peranan Javascript sebagai bahasa pemrograman klien <i>(Client-side scripting)</i> serta dasar-dasar AJAX dan perkembangan Web Modern</p>
+				<h3>Minggu 4</h3>
+				<p>Minggu 4 diisi dengan pembahasan mengenai Boostrap sebagai salah satu framework javascript yang paling banyak digunakan Praktek minggu ini, Membuat Halaman dengan Bootstrap V4 atau V5
+				Kustomisasi Bootstrap dengan Pingendo</p>
+				<h3>Minggu 5 dan 6</h3>
+				<p>Minggu ini membahas mengenai salah satu webMap API, yaitu LeafletJS. Praktikum pada minggu ini: Membuat halaman web sederhana pada LeafletJS, Layouting halaman web dengan Bootstrap, Buat layout peta Leaflet dengan <i>Navbar</i> Bootstrap
+					Minggu 6 membahas mengenai LeafletJS, yaitu penambahan layer, pengenalan format GeoJSON dan instalasi Plugin.
+
+					Praktikum minggu 6:
+					
+					- Tambahkan plugin ke dalam leaflet untuk memperkaya fungsi webgis. <i>Plugin</i> yang bisa ditambahkan (misalnya Leaflet Geolocation, Geocoding, Leaflet Graphic Scale, dll) dapat dilihat pada http://leafletjs.com/plugins.html
+					
+					- Gunakan QGIS atau GeoJSON.io untuk mengkonversi file Jogja.shp menjadi GeoJSON, kemudian tambahkan ke kerangka peta yang sudah dibuat. Gunakan panduan: https://leafletjs.com/examples/geojson/
+					
+					- Mengkombinasikan bootstraps dengan leaflet yang dibuat (geojson + min 1 plugin) untuk membuat sebuah halaman web
+					
+					- Buat halaman web yang serupa dengan menggunakan QGIS2Web</p>
+				<h3>Minggu 7</h3>
+				<p>Pada modul ini akan dibahas mengenai bagaimana aplikasi Mergin Maps: QGIS in pocket sebagai perangkat berbasis mobile, QGIS sebagai perangkat desktop serta Mergin sebagai aplikasi GIS berbasis online dapat digunakan sebagai sarana untuk pengumpulan data dari lapangan secara kolaboratif. Pengumpulan data menggunakan kombinasi ketiga perangkat tersebut dapat digunakan dalam kegiatan survei lapangan, misalnya terkait dengan survei pelanggaran tata ruang, pemetaan aset, pemetaan tempat makan, pemetaan ATM maupun monitoring pembangunan.
+					Pada Praktikum Minggu ke 7 ini, mahasiswa secara berkelompok yang terdiri dari maks 5 orang diminta untuk merancang sebuah kegiatan survei berupa Titik, Garis, Poligon dengan total seluruhnya minimal 30 fitur menggunakan kombinasi ketiga perangkat tersebut. Hasilnya dibuat dalam bentuk laporan dan dikumpulkan terakhir satu bulan dari sekarang. </p>
+			</article>
+		</div>
+		<aside>
+			<article class="profil">
+				<section>
+					<h5><b>Dibuat oleh:</b></h5>
+					<table class="table table-bordered">
+						<tbody>
+						  <tr>
+							<td>Nama</td>
+							<td>Sinta Alfi Royanul Mansurina</td>
+						  </tr>
+						  <tr>
+							<td>NIM</td>
+							<td>21/482524/TK/53299</td>
+						  </tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+		</aside>
+	</main>
+	<h3>Tempat favorit di UGM</h3><br>
+	<div id="map"></div>
+	<script src="script.js"></script>
+	<br>
+	<form id="selesaiForm">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="button" onclick="validasiPassword()">Submit</button>
+        <p class="error-message" id="error-message"></p>
+    </form>
+	<footer>
+		<div class="row">
+			<div class="col-md-12">
+				<p>&copy; 2021 - Sinta Alfi Royanul Mansurina</p>
+			</div>
+		</div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
